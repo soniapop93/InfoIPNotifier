@@ -17,6 +17,7 @@ namespace InfoIPNotifier.IP
         public string currency { get; set; }
         public string isp { get; set; }
         public string org { get; set; }
+
         [JsonPropertyName("as")]
         public string asn { get; set; }
         public string reverse { get; set; }

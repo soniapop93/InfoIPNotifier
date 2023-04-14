@@ -1,5 +1,4 @@
 ﻿using InfoIPNotifier.Utilities;
-using System;
 using System.Text.Json;
 
 namespace InfoIPNotifier.IP
@@ -8,8 +7,7 @@ namespace InfoIPNotifier.IP
     {
         public static string getInfoFromIPRequest(string endpoint)
         {
-            string response = RequestManager.getRequest(endpoint);
-            return response;
+            return RequestManager.getRequest(endpoint);
         }
 
         public static InformationFromIP parseInfoFromIPRequest(string response)
